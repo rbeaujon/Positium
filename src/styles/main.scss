@@ -1,0 +1,142 @@
+/*-------------------------------------------*/
+      /* Responsive Web Design  */ 
+      
+/*
+  # Developed with the Mobile First methodology and then for desktop.
+  # Contains scrolls to adapt the view easiest. 
+
+*/
+
+/*-------------------------------------------*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+       
+      }
+
+    .bg img{
+      opacity: 0.3;  
+      background-size: cover;  
+      width: 100vw;  
+     
+     
+    }
+    
+    .textInfo {
+      text-align: justify;
+      font-size: 1vw;
+      width: 13vw;
+      margin: 1vw 0 0 0.2vw;
+    }
+    
+    .menu {
+        position: relative;
+        padding: 3vh 0 0.5vh 1vw;
+        font-size: 1.2vw;
+        background: #efeff0;
+        box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.3);
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        width: 100vw;
+        z-index: 1;
+    }
+    .menu label {
+      text-align: left;
+      @media  screen and (min-width: 320px)  {
+        margin-right: 80vw;
+      }
+      @media  screen and (min-width: 768px)  {
+        margin-right: 85vw;
+      }   
+      @media  screen and (min-width: 2500px)  {
+        margin-right: 80vw;
+      } 
+      @media  screen and (min-width: 4000px)  {
+        margin-right: 80vw;
+        
+      }   
+    }
+    .menu button {
+      text-align: right;
+      border-color: #c6c7c6;
+      border-radius: 10%;
+      
+    }
+    .menu button:hover {
+      background: rgba(230, 226, 226, 0.829);
+      box-shadow: 0 0.4vw 0.2vw 0 rgb(173, 170, 170);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        height: 5vh;
+        text-align:center;
+        font-family: sans-serif;
+        font-size: 0.4vw;
+        background: rgb(110, 181, 202);
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        text-transform: uppercase;
+        
+        @media  screen and (min-width: 768px)  {
+          height: 2.5vh;
+          }    
+      }
+       
+/*------------- Columns control ------------**/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media  screen and (min-width: 400px)  {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media screen and (min-width: 1100px) {
+  /* For desktop normal screem: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media screen and (min-width: 1700px)  {
+  /* For desktop: */
+  .col-b-1 {width: 8.33%;}
+  .col-b-2 {width: 16.66%;}
+  .col-b-3 {width: 25%;}
+  .col-b-4 {width: 33.33%;}
+  .col-b-5 {width: 41.66%;}
+  .col-b-6 {width: 50%;}
+  .col-b-7 {width: 58.33%;}
+  .col-b-8 {width: 66.66%;}
+  .col-b-9 {width: 75%;}
+  .col-b-10 {width: 83.33%;}
+  .col-b-11 {width: 91.66%;}
+  .col-b-12 {width: 100%;}
+}
+
+/*--------------------------------------------*/
