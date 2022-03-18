@@ -3,9 +3,7 @@ import { IS_AUTHENTICATED, SET_ERROR } from './positium.actions';
 export const getinitialState = () => ({
     isSubmitted: false,
     user_id: null,
-    operator_id: null,
     name: null,
-    url: null,
     ip: null,
     error: null
 });
