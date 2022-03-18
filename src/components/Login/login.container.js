@@ -29,26 +29,26 @@ export class LoginContainer extends PureComponent {
         ip: null
     } 
     async componentDidMount() {
-        //this.getIP();
+        this.getIP();
     }  
     
-    // getIP() {
-    //     async function myIP(x) {
-    //         await fetch('https://ipapi.co/json/', { //catch public IP
-    //         method: 'GET',
-    //         headers: { 'Content-Type': 'application/json'}
-    //     })
-    //     .then(response => response.json())
-    //     .then(ipData => {
-    //         console.log(JSON.stringify(ipData, null, 2));
-    //         x.setState({
-    //             ip: ipData.ip
-    //         });
-    //     });
-    //     }   
-    //     myIP(this);
+    getIP() {
+        async function myIP(x) {
+            await fetch('https://ipapi.co/json/', { //catch public IP
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(response => response.json())
+        .then(ipData => {
+            console.log(JSON.stringify(ipData, null, 2));
+            x.setState({
+                ip: ipData.ip
+            });
+        });
+        }   
+        myIP(this);
 
-    // }
+    }
     handleLogin(event){
         
         event.preventDefault(); //the page doesn't reload
@@ -57,7 +57,6 @@ export class LoginContainer extends PureComponent {
         var userPass = pass.value;
         var userFound = false;
 
-        //Checking the user in the API nodejs
         async function getUsers(x) {
 
             let payload =  {
@@ -80,10 +79,10 @@ export class LoginContainer extends PureComponent {
 
                     if(data != null){
                         const user_id = parseInt(data['id']);
-                       // const myIP =  x.state.ip;
+                        const myIP =  x.state.ip;
                         userFound = true;   
                         return (
-                            x.props.isAuthenticated(true, user_id, data['name'])
+                            x.props.isAuthenticated(true, user_id, data['name'], myIP)
                         )
                     }
                     if (userFound === false){

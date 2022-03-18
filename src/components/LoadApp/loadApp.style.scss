@@ -4,55 +4,60 @@
 
 .container {
   position: absolute;
-  width: 100vw;
-  left: 15vw;
-  top: 25mm; 
+  width: 90vw;
+  left: 1.5vw;
+  top: 20mm; 
   height: 85vh;
-  padding: 20px 0 10px 10px;
-  
+  padding: 0 0 0 20px;
 }
 .container label{
-  font-size: 150%;
-  color: #05558a;
+  font-size: 4vw;
+  color: #fbfcfd;
   text-shadow: 2px 2px 4px #94deeb;
+ 
+}
+.container-cond{
+  display: grid;
+  grid-template-columns: 8vw 8vw;
+  color: #ffffff;
+  font-size: 1vw;
+  padding: 0 0 0 20vw;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
   
 }
-.country {
-  color: #009fe9;
-  padding: 20px 0px 0px 0px;
-  font-size: 100%;
+.country { 
+  color: #72cef8;
+  font-size: 1.5vw;
+  padding: 10vh 0 0 20vw;
   font-style: italic;
   text-transform: capitalize;
   text-align: left;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 .country label {
-    color: #0a0a0a;
+    color: #365a83;
     font-size: 70%;
     text-transform: capitalize;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 .gps {
-    color: #968989;
+    color: #f7f4f49f;
     padding: 0 0 0.5vh 0px;
+    padding: 0 0 0 20vw;
     font-size: 70%;
+    padding-bottom: 3vh;
     text-transform:capitalize;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  .condition {
-    color: #968989;
-    font-size: 70%;
-    text-transform:capitalize;
-    text-align: left;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
+  #icon{
+    width: 350px ;  
+    height: auto;  
+    position: fixed;
+    margin: 0 0 0 40vw;
   }
-  .condition #temp{
-    font-size: 70%;
-  }
-  .condition #condition{
-    font-size: 70%;
-  }
-  
+ 

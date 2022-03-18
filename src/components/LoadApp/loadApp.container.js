@@ -53,7 +53,7 @@ export class LoadAppContainer extends PureComponent {
         
 
         return (
-            <div className='container'>
+            <div>
                      <LoadApp
                      { ...this.state }
                     />
