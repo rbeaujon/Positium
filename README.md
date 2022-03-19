@@ -1,4 +1,4 @@
-# YOLO GROUP ASSIGMENT
+# POSITIUM
 
 
 Project with Front-End React-Redux and SASS with responsive designs and Back-End (API's) on PHP and Mysql.
