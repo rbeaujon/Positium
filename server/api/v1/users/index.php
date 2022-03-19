@@ -17,8 +17,7 @@ class Users extends api {
         $data = json_decode($dataRaw);
 
         //Variables from request 
-        $userEmail = $data->userEmail;
-        $userPass = $data->userPass;
+        $token = $data->token;
         
         $code = 200;
         api::responseCode($code);
@@ -33,13 +32,13 @@ class Users extends api {
         }
         else{ 
 
-            $session = ProductService::getSession($userEmail, $userPass);
-            $sessions = [ "id" =>  $session['id'], "name" => $session['name'], "token" => $session['jwt']  ] ;
+            $user = ProductService::getUser($token);
+            $user = [ "name" =>  $user['name'] ] ;
       
             api::responseCode($code);
 
             header('Content-Type: application/json; charset=utf-8'); 
-            echo json_encode($sessions, JSON_PRETTY_PRINT);
+            echo json_encode($user, JSON_PRETTY_PRINT);
             
         }  
     }
