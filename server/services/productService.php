@@ -50,6 +50,38 @@ abstract class ProductService{
         $conn->closeConnection();
 
     }
+    public static function getUser($token){
+
+        $conn = new connectionDB();
+        $conn->createConnection();
+
+        $querySession= "SELECT * FROM `sessions` WHERE token='$token' ";
+        $resultSession=$conn->executeQuery($querySession);
+        $session = $resultSession->fetch_assoc();
+        $id = $session['user_id'];
+
+
+        $query= "SELECT * FROM users WHERE id=$id ";
+        $result=$conn->executeQuery($query);
+    
+        $user = $result->fetch_assoc();
+       
+        if($user){
+            $name = $user['name'];
+        
+            // Closing the connection with BD
+            $conn->closeConnection();
+            return 'RICARDO';        
+        }
+        else{
+            return "Error";
+        }
+       
+
+        // Closing the connection with BD
+        $conn->closeConnection();
+
+    }
    
    
 }

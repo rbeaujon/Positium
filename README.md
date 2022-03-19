@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# YOLO GROUP ASSIGMENT
+
+
+Project with Front-End React-Redux and SASS with responsive designs and Back-End (API's) on PHP and Mysql.
+The following project emulates the interaction between a gamer, the operator, and the games provider.
+The client (gamer), accesses the website game through one operator that verifies the conditions and wallet in its servers.
+The operator authenticates him, connects with its provider (API), and shows the game list available.
+The customer interact and select the game, sending this a request to the provider to get the game URL and redirect to the customer to it (game)
+
+<img src="/assets/diagram/positium_diagram.png" width="80%">
+
+## Project Hosting 
+<https://aistica.com/positium/>
+
+### Admin
+user: admin@positium.com</br>
+pass: 1234
+
+### User:
+user: user@positium.com</br>
+pass: 1234
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img src="/assets/screenshots/login.jpg" width="80%">
+<img src="/assets/screenshots/logout.jpg" width="80%">
+<img src="/assets/screenshots/fc.jpg" width="80%">
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To view in the browser
+Local [http://localhost:3000]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Remote [https://aistica.com/positium]
 
-### `npm test`
+## API ENDPOINTS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### AISTICA.com
+* [hhttps://aistica.com/positium/server/api/v1/sessions/]
+* [https://aistica.com/positium/server/api/v1/users/]
 
-### `npm run build`
+### IPAPI.co
+* [ipapi.co/json]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### WEATHERAPI.com
+* [api.weatherapi.com/v1]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Curl to endpoints
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sessions
 
-### `npm run eject`
+<img src="/assets/screenshots/sessions.jpg" width="80%">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Users
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="/assets/screenshots/user.jpg" width="80%">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ipapi.co
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="/assets/screenshots/ipapi.jpg" width="80%">
 
-## Learn More
+### weatherapi.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="/assets/screenshots/weather.jpg" width="80%">
