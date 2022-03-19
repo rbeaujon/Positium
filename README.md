@@ -58,12 +58,12 @@ Remote [https://aistica.com/positium]
 
 ### Users
 
-<img src="/assets/screenshots/Curl/user.jpg" width="80%">
+<img src="/assets/screenshots/Curls/user.jpg" width="80%">
 
 ### ipapi.co
 
-<img src="/assets/screenshots/Curl/ipapi.jpg" width="80%">
+<img src="/assets/screenshots/Curls/ipapi.jpg" width="80%">
 
 ### weatherapi.com
 
-<img src="/assets/screenshots/Curl/weather.jpg" width="80%">
+<img src="/assets/screenshots/Curls/weather.jpg" width="80%">
