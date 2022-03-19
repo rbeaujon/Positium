@@ -54,16 +54,16 @@ Remote [https://aistica.com/positium]
 
 ### Sessions
 
-<img src="/assets/screenshots/sessions.jpg" width="80%">
+<img src="/assets/screenshots/Curl/sessions.jpg" width="80%">
 
 ### Users
 
-<img src="/assets/screenshots/user.jpg" width="80%">
+<img src="/assets/screenshots/Curl/user.jpg" width="80%">
 
 ### ipapi.co
 
-<img src="/assets/screenshots/ipapi.jpg" width="80%">
+<img src="/assets/screenshots/Curl/ipapi.jpg" width="80%">
 
 ### weatherapi.com
 
-<img src="/assets/screenshots/weather.jpg" width="80%">
+<img src="/assets/screenshots/Curl/weather.jpg" width="80%">
