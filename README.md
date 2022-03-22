@@ -1,8 +1,11 @@
 # POSITIUM
 
+The next project is about the current weather in Estonia. It shows the temperature, feel like, the wind conditions, pressure, precipitation, visibility, UV rays, carbon dioxide, and Nitrogen dioxide in the atmosphere
 
-Project with Front-End React-Redux and SASS with responsive designs and Back-End (API's) on PHP and Mysql.
-The following project is about the current Estonian weather.
+### Technical details
+
+Front-End: React-Redux and SASS with responsive designs
+Back-End: RESTFUL API on PHP and Mysql.
 
 <img src="/assets/diagram/positium_diagram.png" width="80%">
 
